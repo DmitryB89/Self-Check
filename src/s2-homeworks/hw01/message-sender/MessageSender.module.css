@@ -3,11 +3,34 @@
 }
 
 .textarea {
+    position: absolute;
+    width: 113px;
+    height: 17px;
+    left: 94px;
+    top: 420px;
 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.6);
+
+    opacity: 0.9;
 }
 
 .button {
+    position: fixed;
+    width: 120px;
+    height: 40px;
+    left: 1090px;
+    top: 408px;
 
+    background: #0066CC;
+    border-radius: 20px;
 }
 
 .button:hover {

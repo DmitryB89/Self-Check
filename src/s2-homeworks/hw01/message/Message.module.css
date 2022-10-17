@@ -1,4 +1,13 @@
 .message {
+    position: fixed;
+    width: 976px;
+    height: 40px;
+    left: 70px;
+    top: 408px;
+
+    background: #F5F7FB;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 20px;
 
 }
 
@@ -7,25 +16,83 @@
 }
 
 .imageAndText img {
-
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 70px;
+    top: 287px;
+    border-radius: 50px;
 }
 
 .text {
+    position: fixed;
+    width: 414px;
+    height: 60px;
+    left: 135px;
+    top: 275px;
+    border-radius: 10px;
+
+    background: #F5F7FB;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
 
 }
 
 .text:after {
-
+ content: '';
+    position: fixed;
+    top: 305px;
+    bottom: 0px;
+    left: 95px;
+    width: 50px;
+    height: 30px;
+    background: radial-gradient(circle at top left, transparent 70%, blue 60%);
 }
 
 .name {
+    position: fixed;
+    width: 35px;
+    height: 20px;
+    left: 145px;
+    top: 283px;
 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #000000;
 }
 
 .messageText {
 
+    position: fixed;
+    width: 374px;
+    height: 20px;
+    left: 145px;
+    top: 307px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .time {
+    position: fixed;
+    width: 29px;
+    height: 12px;
+    left: 80px;
+    top: 340px;
 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #000000;
 }
