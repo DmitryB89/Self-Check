@@ -22,7 +22,9 @@ const Message = (props: MessagePropsType) => {
                         Борис
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        lorem20
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ad aperiam atque dolorem expedita illum incidunt mollitia nihil officiis, pariatur tempora.
+                        Culpa expedita in ipsam molestias perspiciatis placeat quae soluta, tenetur.
 
                     </pre>
                 </div>
