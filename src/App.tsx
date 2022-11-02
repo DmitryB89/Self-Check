@@ -7,6 +7,7 @@ function App() {
     return (
         <div className="App">
             <HW1/>
+            <HW2/>
         </div>
     );
 }

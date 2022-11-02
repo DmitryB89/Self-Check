@@ -28,12 +28,12 @@ const FriendMessage = (props: FriendMessagePropsType) => {
 
                       Анатолий
                     </div>
-                    <pre
+                    <div
                         id={'hw1-friend-text-' + props.message.id}
                         className={s.friendMessageText}
                     >
-                      asasassssssssssssss
-                    </pre>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptates.
+                    </div>
                 </div>
             </div>
             <div

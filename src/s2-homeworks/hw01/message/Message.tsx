@@ -21,12 +21,10 @@ const Message = (props: MessagePropsType) => {
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         Борис
                     </div>
-                    <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ad aperiam atque dolorem expedita illum incidunt mollitia nihil officiis, pariatur tempora.
-                        Culpa expedita in ipsam molestias perspiciatis placeat quae soluta, tenetur.
+                    <div id={'hw1-text-' + props.message.id} className={s.messageText}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur impedit libero mollitia nemo porro quas.
 
-                    </pre>
+                    </div>
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>

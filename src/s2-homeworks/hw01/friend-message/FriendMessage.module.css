@@ -1,15 +1,17 @@
 .friendMessage {
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    width: max-content;
+    /*width: max-content;*/
     padding: 10px;
-    margin-right: auto;
+    /*margin-right: auto;*/
     margin-bottom: 56px;
 }
 
 .friendImageAndText {
     display: flex;
     align-self: start;
+
 }
 
 .friendImageAndText img {
@@ -40,9 +42,9 @@
     position: absolute;
     bottom: 0;
     right: 100%;
-    transform: translateX(10px);
+    transform: translateX(13px);
     display: block;
-    width: 30px;
+    width: 45px;
     height: 30px;
     background: radial-gradient(circle at top left, transparent 70%, #e6e8e8 0) no-repeat right bottom;
 }
