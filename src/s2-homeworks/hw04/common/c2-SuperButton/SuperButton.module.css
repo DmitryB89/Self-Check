@@ -1,36 +1,131 @@
-.button {
+@keyframes blink {
+    0% {
+        left: -130%;
+    }
+    100% {
+        left: 130%;
+    }
 }
 
-.disabled {
+.button {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    /*width: 132px;*/
+    /*height: 30px;*/
+    /*font-weight: 600;*/
+    /*font-size: 14px;*/
+    /*line-height: 20px;*/
+    /*color: #FFFFFF;*/
+}
+
+.button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -130%;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    transform: skew(45deg);
+    background-color: #ffffff;
+    opacity: 0.7;
+    z-index: 14;
+}
+
+.button:hover::after {
+    animation: blink 0.35s ease;
+}
+
+.button:hover::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    width: 300vw;
+    background-color: #ffffff;
+    opacity: 0.2;
+    z-index: 7;
+}
+
+.button:focus {
+    outline: #99ff99 solid 1px;
+}
+
+.button:active {
+    background: #99ff99;
+}
+
+
+.button:disabled {
+    background: #004D99;
+    cursor: auto
+}
+
+.button:disabled:after {
+ z-index: -1;
+}
+.button:disabled:before {
+    z-index: -1;
 }
 
 .secondary {
+    width: 176px;
+    height: 30px;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
+    color: #0066CC;
 }
 
 .default {
+    background: #003300;
+    color: #99ff99;
+    outline: none
 }
 
 .red {
+    background: #dd3355;
 }
 
 .default:hover {
+    width: 167px;
+    height: 30px;
+    background: #0080FF;
 }
 
 .red:hover {
+    width: 167px;
+    height: 30px;
+    background: #FF1A47;
 }
 
 .secondary:hover {
+    width: 167px;
+    height: 30px;
+    background: #E5F0FA;
+    border: 1px solid #0066CC;
 }
 
 
 .default:active {
+    width: 149px;
+    height: 30px;
+    background: #0059B3;
 }
 
 .secondary:active {
+    width: 149px;
+    height: 30px;
+    background: #C9E5FF;
+    border: 1px solid #0066CC;
+    color: #0066CC;
 }
 
 .red:active {
-}
-
-.button:disabled {
+    width: 149px;
+    height: 30px;
+    background: #B31232;
 }
