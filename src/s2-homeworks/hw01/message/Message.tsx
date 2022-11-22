@@ -22,7 +22,7 @@ const Message = (props: MessagePropsType) => {
                         Борис
                     </div>
                     <div id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        Some new text
+                        some new text
 
                     </div>
                 </div>
