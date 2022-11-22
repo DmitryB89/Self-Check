@@ -17,15 +17,18 @@ function Pages() {
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
                 {/*роутинг будут писать студенты*/}
+                <Route path={'/'} element={<Navigate to={PATH.PRE_JUNIOR}/>}/>
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
                 {/*<Route ...*/}
 
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
+                <Route path={'/pre-junior'} element={<PreJunior/>}></Route>
+                <Route path={'/junior'} element={<Junior/>}></Route>
+                <Route path={'/junior-plus'} element={<JuniorPlus/>}></Route>
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
+                <Route path={'/*'} element={<Error404/>}></Route>
+
                 {/*<Route ...*/}
             </Routes>
         </div>
