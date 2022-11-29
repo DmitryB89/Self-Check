@@ -20,6 +20,13 @@
     /*color: #FFFFFF;*/
 }
 
+.disabled {
+    background: #004D99;
+    opacity: 0.5;
+    color: #002E5C;
+}
+
+
 .button:after {
     display: block;
     content: '';
