@@ -30,7 +30,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                   key={o.id}
                   value={o.value}
               >
-                  {o.value}
+                  {o.id}
               </option>
           ))
         : [] // map options with key
