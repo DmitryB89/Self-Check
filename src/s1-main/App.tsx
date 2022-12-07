@@ -11,10 +11,10 @@ function App() {
     return (
         <div className={s.App}>
             <HW5/>
-            <HW6/>
-            <HW7/>
-            <HW8/>
-            <HW9/>
+            {/*<HW6/>*/}
+            {/*<HW7/>*/}
+            {/*<HW8/>*/}
+            {/*<HW9/>*/}
         </div>
     )
 }
